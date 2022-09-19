@@ -13,10 +13,7 @@ namespace hw1
             {
                 int pfull = (int)a / 180;
                 int ppart = (int)a % 180;//считаем сколько полных "пи" в углу и сколько неполных
-                //Console.WriteLine(pfull);
-                //Console.WriteLine(ppart%180);
                 double res = 3.14 * (pfull + (a / 180 - pfull));
-                //Console.WriteLine(res);
                 if (pfull == 0 && ppart > 0)
                 {
                     Console.WriteLine($"угол равен {res:00} радиан");//значение если угол меньше 180 градусов
